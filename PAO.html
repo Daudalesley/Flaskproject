@@ -1,0 +1,56 @@
+<div class="section">
+    <h2>Course Selection</h2>
+    <table>
+        <tr>
+            <th>Course Code</th>
+            <th>Course Title</th>
+            <th>Schedule</th>
+            <th>Credits</th>
+            <th>Tuition Fee</th>
+        </tr>
+        <tr>
+            <td>CS101</td>
+            <td>Introduction to Computer Science</td>
+            <td>Mon/Wed 10:00-11:30 AM</td>
+            <td>3</td>
+            <td>$300</td>
+        </tr>
+        <tr>
+            <td>ENG201</td>
+            <td>English Literature</td>
+            <td>Tue/Thu 1:00-2:30 PM</td>
+            <td>3</td>
+            <td>$300</td>
+        </tr>
+        <tr>
+            <td>MATH301</td>
+            <td>Calculus I</td>
+            <td>Mon/Wed 1:00-2:30 PM</td>
+            <td>4</td>
+            <td>$400</td>
+        </tr>
+        <tr>
+            <td>HIST102</td>
+            <td>World History</td>
+            <td>Tue/Thu 10:00-11:30 AM</td>
+            <td>3</td>
+            <td>$300</td>
+        </tr>
+        <tr>
+            <td>BIO101</td>
+            <td>Introduction to Biology</td>
+            <td>Fri 9:00-12:00 PM</td>
+            <td>4</td>
+            <td>$400</td>
+        </tr>
+    </table>
+    <label>Select Courses:</label>
+    <label><input type="checkbox" name="course" value="CS101" onchange="updateTotalFee()"> CS101</label>
+    <label><input type="checkbox" name="course" value="ENG201" onchange="updateTotalFee()"> ENG201</label>
+    <label><input type="checkbox" name="course" value="MATH301" onchange="updateTotalFee()"> MATH301</label>
+    <label><input type="checkbox" name="course" value="HIST102" onchange="updateTotalFee()"> HIST102</label>
+    <label><input type="checkbox" name="course" value="BIO101" onchange="updateTotalFee()"> BIO101</label>
+    <p>Total Tuition Fee: <span id="totalFeeDisplay">$0</span></p>
+    <input type="hidden" id="totalFee" name="totalFee" required>
+</div>
+
